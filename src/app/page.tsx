@@ -75,7 +75,7 @@ export default function Home() {
   return (
     <div className="w-full h-screen flex justify-center items-center">
       <Popover
-        position="left"
+        position="top"
         content={
           <div className="flex flex-col bg-white px-4">
             <h1 className="text-sm font-medium">Your password must have:</h1>

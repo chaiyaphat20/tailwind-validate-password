@@ -33,22 +33,22 @@ export const Popover: React.FC<PopoverProps> = ({
     >
       {content}
     </span>
-    <span
+    <div
       className={classNames(
         'absolute hidden group-hover:inline-block border-[6px]',
         position === 'top'
-          ? 'left-1/2 -translate-x-1/2 bottom-full border-l-transparent border-r-transparent border-b-0 border-t-white'
+          ? 'left-1/2 -translate-x-1/2 bottom-full border-l-transparent border-r-transparent border-b-0 border-t-gray-300'
           : '',
         position === 'bottom'
-          ? 'left-1/2 -translate-x-1/2 top-full border-l-transparent border-r-transparent border-t-0 border-t-white'
+          ? 'left-1/2 -translate-x-1/2 top-full border-l-transparent border-r-transparent border-t-0 border-b-gray-300'
           : '',
         position === 'left'
-          ? 'top-1/2 -translate-y-1/2 right-full border-t-transparent border-b-transparent border-r-0 border-t-white'
+          ? 'top-1/2 -translate-y-1/2 right-full border-t-transparent border-b-transparent border-r-0 border-l-gray-300 '
           : '',
         position === 'right'
-          ? 'top-1/2 -translate-y-1/2 left-full border-t-transparent border-b-transparent border-l-0 border-t-white'
+          ? 'top-1/2 -translate-y-1/2 left-full border-t-transparent border-b-transparent border-l-0 border-r-gray-300'
           : ''
       )}
-    ></span>
+    ></div>
   </div>
 )
